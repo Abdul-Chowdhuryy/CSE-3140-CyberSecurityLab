@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <link rel="stylesheet" href="index.css">
+        <!-- links css so I can use it -->
+    <style>
+        body {
+            background-image: url('/static/storrs.jpg');
+            background-size: cover;
+        }
+        .husky-container {
+            /* centers container */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding: 0px 0px 15px; /* top right-left bottom */
+            background-image: url('/static/jon-logo.jpeg');
+            background-size: 375px;
+        }
+    </style>
+    <font color="d6a502">
+    <div class="husky-container">
+        <div class="input-box">
+            <h1>Husky Banking</h1>
+            <p>A bank where you know your money is in the right paws!</p><br>
+                <form action="/submit" method="post">
+                    <div class = 'inputs'>
+                        <label for="username">Username:</label>
+                        <input type="text" id="user" name="user" size="30"><br><br><br>
+                        <label for="password">Password:</label>
+                        <input type="text" id="pwd" name="pwd" size="30">
+                    </div><br>
+                    <input type="submit" value="Sign In"><br><br>
+                </form><br>
+            <button type="custom-page">Custom Page</button>
+        </div>       
+    </div>
+    </font>
+    </body>
+</html>
